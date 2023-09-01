@@ -1,0 +1,101 @@
+/* HERO SECTION */
+.hero-background {
+    // // background-color: blue;
+    // background-image: url(../images/chocolate-covered-cocoa-powder-m-@x1.jpg);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/chocolate-covered-cocoa-powder-m-@x1.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    padding-top: 395px;
+    width: 335px;
+    height: 621px;
+    flex-shrink: 0;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+            background-image: url(../images/chocolate-covered-cocoa-powder-m-@x1.jpg);
+            background-size: cover;
+        }
+
+}
+.hero-box{
+    display: flex;
+    width: 295px;
+    height: 205px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+.hero-title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    margin-bottom: 32px;
+}
+.hero-button-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+}
+.hero-button-buy{
+    display: flex;
+    padding: 12px 28px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: #FD9222;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button-buy:hover{
+    background: #FCF1E0;
+    color: #FD9222;
+}
+.hero-button-how{
+    display: flex;
+    width: 159px;
+    height: 41px;
+    padding: 12px 26px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button-how:hover{
+    color: #FD9222;
+    border: 1px solid #FD9222;
+}
+
+.benefits-svg-box_icon{
+    width: 28px;
+        height: 13px;
+        flex-shrink: 0;
+        color: #FD9222;
+}

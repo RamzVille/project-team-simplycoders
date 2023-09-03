@@ -1,53 +1,54 @@
 <section class="subscribe-modal">
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="close-modal" data-modal-close>
-      <svg class="subscribe-icon" width="28" height="28">
-        <use href="./images/subscribe-icons.svg#close"></use>
-      </svg>
-    </button>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-modal" data-modal-close>
+        <svg class="subscribe-icon">
+          <use href="./images/subscribe-icons.svg#close"></use>
+        </svg>
+      </button>
 
-    <!-- SUBSCRIBE MODAL-->
-    <form name="modal-button" class="subscribe-form">
-      <picture>
-        <!-- TABLET -->
-        <source
-          srcset="
-            ./images/subscribe-modal-image-t.jpg    1x,
-            ./images/subscribe-modal-image-t@x2.jpg 2x
-          "
-          media="(min-width:768px)"
-        />
-        <!-- MOBILE -->
-        <source
-          srcset="
-            ./images/suscribe-modal-image-m.jpg     1x,
-            ./images/subscribe-modal-image-m@x2.jpg 2x
-          "
-          media="(min-width:375px)"
-        />
-        <img
-          class="image"
-          src="./images/subscribe-modal-image-t.jpg"
-          alt="chocolate"
-        />
-      </picture>
-      <div class="susbscribe-modal-box">
-        <span class="subscribe-modal-text"
-          >explore our
-          <span class="orange-text">new chocolate</span> first!</span
-        >
-        <div class="subscribe-input">
-          <input
-            class="form-input"
-            type="email"
-            name="user-email"
-            placeholder="Enter your email"
+      <!-- SUBSCRIBE MODAL-->
+      <form name="modal-button" class="subscribe-form">
+        <picture>
+          <!-- TABLET -->
+          <source
+            srcset="
+              ./images/subscribe-modal-image-t.jpg    1x,
+              ./images/subscribe-modal-image-t@x2.jpg 2x
+            "
+            media="(min-width:768px)"
           />
+          <!-- MOBILE -->
+          <source
+            srcset="
+              ./images/suscribe-modal-image-m.jpg     1x,
+              ./images/subscribe-modal-image-m@x2.jpg 2x
+            "
+            media="(min-width:375px)"
+          />
+          <img
+            class="image"
+            src="./images/subscribe-modal-image-t.jpg"
+            alt="chocolate"
+          />
+        </picture>
+        <div class="susbscribe-modal-box">
+          <span class="subscribe-modal-text"
+            >explore our <br />
+            <span class="orange-text">new chocolate</span> first!</span
+          >
+          <div class="subscribe-input">
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              placeholder="Enter your email"
+            />
 
-          <button type="submit" class="modal-subscribe-btn">Submit</button>
+            <button type="submit" class="modal-subscribe-btn">Subscribe</button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
-  </section>
+</section>

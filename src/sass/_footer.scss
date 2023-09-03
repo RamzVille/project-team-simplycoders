@@ -1,28 +1,24 @@
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .footer-section {
+  // width: 100%;
   background-color: #1e1823;
-  padding: 50px 32px;
+  padding: -78px 0;
+
   box-shadow: rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.1);
-  /* height: 270px; */
 }
 .footer-box {
   display: flex;
   margin-bottom: 62px;
-  justify-content: flex-start;
+  gap: 32px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .footer-box-discription {
   width: 300px;
-  margin-right: 500px;
+
   color: #ffffff;
   font-size: 28px;
   font-weight: 500;
@@ -33,7 +29,6 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 14px;*/
 }
 .footer-heading {
   color: #ffffff;
@@ -43,11 +38,19 @@
   line-height: 18px;
   margin-bottom: 14px;
 }
-.footer-social-box {
+.footer-contact-box {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    gap: 50px;
+  }
+}
+.footer-social-box {
   justify-content: flex-end;
   margin-left: auto;
 }
+
 .footer-contacts-list {
   color: #ffffff;
   display: flex;
@@ -61,7 +64,7 @@
 }
 .footer-social-list {
   display: flex;
-  /* margin-left: 63px; */
+
   gap: 18px;
   justify-content: flex-end;
 }
@@ -71,9 +74,14 @@
 }
 
 .social-icon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   stroke: #ffffff;
+
+  @media screen and(min-width:768px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -86,13 +94,38 @@
 }
 .footer-menu-list {
   display: flex;
-  color: #ffffff;
+  flex-direction: column;
   gap: 24px;
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.footer-menu-item {
+}
+
+.footer-menu-link {
+  color: #ffffff;
+
   font-size: 14px;
   font-family: 500;
   line-height: 16px;
   letter-spacing: -0.28px;
   justify-content: start;
   align-items: flex-start;
-  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #fd9222;
+  background-color: #fcf1fc;
+  padding: 5px;
+
+  border-radius: 100px;
 }

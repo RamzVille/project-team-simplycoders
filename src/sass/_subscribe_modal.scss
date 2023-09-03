@@ -13,7 +13,7 @@
 
 .modal {
   position: absolute;
-  // padding: 72px 24px 24px 24px;
+
   top: 50%;
   left: 50%;
   border-radius: 4px;
@@ -44,16 +44,21 @@
   right: 24px;
   padding: 0;
 
-  // width: 28px;
-  // height: 28px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   cursor: pointer;
 
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  //   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
 }
 .subscribe-icon {
   stroke: #ffffff;
@@ -93,10 +98,11 @@
 }
 .subscribe-input {
   display: inline-flex;
-  position: relative;
+  // position: relative;
 }
 .form-input {
   color: rgba(64, 64, 64, 0.3);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.28px;
@@ -111,29 +117,36 @@
 
   @media screen and (min-width: 768px) {
     padding: 14px 24px;
+    width: 313px;
+    font-size: 18px;
+    letter-spacing: -0.36px;
   }
 }
 .modal-subscribe-btn {
   display: flex;
-  width: 56px;
+  width: 100px;
   padding: 14px 28px;
   justify-content: center;
   align-items: center;
   // row-gap: 14px;
   // position: absolute;
-  margin-left: 8px;
+  margin-left: -100px;
   right: 0;
   border-radius: 100px;
   background-color: #fd9222;
   color: #ffffff;
   border: 0;
   font-size: 14px;
+  font-weight: 600;
 
   @media screen and (min-width: 768px) {
-    top: 17px;
-    left: 32px;
-    width: 100px;
+    // top: 17px;
+    // left: 32px;
+    // width: 100px;
     height: 52px;
     padding: 17px 40px;
+    width: 137px;
+
+    margin-left: 8px;
   }
 }

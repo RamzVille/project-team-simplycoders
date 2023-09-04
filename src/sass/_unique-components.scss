@@ -17,16 +17,16 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.54px;
-  padding: 0 26px;
+  padding: 0 5px;
 
   @media screen and (min-width: 768px) {
-    padding: 0 148px;
+    padding: 0 116px;
     margin-bottom: 28px;
     font-size: 24px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0 364px;
+    padding: 0 332px;
   }
 }
 
@@ -41,15 +41,14 @@
   text-align: center;
   line-height: 1.28;
   letter-spacing: -0.28px;
-  padding: 0 16px;
 
   @media screen and (min-width: 768px) {
-    padding: 0 140px;
+    padding: 0 107px;
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0 355px;
+    padding: 0 323px;
   }
 }
 

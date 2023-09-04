@@ -1,23 +1,54 @@
 /* HERO SECTION */
 .hero-background {
-    // // background-color: blue;
-    // background-image: url(../images/chocolate-covered-cocoa-powder-m-@x1.jpg);
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/chocolate-covered-cocoa-powder-m-@x1.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
     background-size: cover;
     border-radius: 25px;
-    padding-top: 395px;
     width: 335px;
-    height: 621px;
+    // height: 621px;
+    padding:395px 20px 21px 20px;
     flex-shrink: 0;
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-            background-image: url(../images/chocolate-covered-cocoa-powder-m-@x1.jpg);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/chocolate-covered-cocoa-powder-m-@x2.jpg);
             background-size: cover;
-        }
+            }
 
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/chocolate-covered-cocoa-powder-t-@x1.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            width: 704px;
+            // height: 890px;
+            padding: 671px 40px 40px 40px;
+            flex-shrink: 0;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/chocolate-covered-cocoa-powder-t-@x2.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+                background-size: cover;
+            }
+        }
+    @media screen and (min-width: 1200px) {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/chocolate-covered-cocoa-powder-d-@x1.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            width: 1136px;
+            // height: 890px;
+            padding: 381px 40px 40px 40px;
+            flex-shrink: 0;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/chocolate-covered-cocoa-powder-d-@x2.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+                background-size: cover;
+            }
+        }
 }
+
 .hero-box{
     display: flex;
     width: 295px;
@@ -25,7 +56,41 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+    flex-shrink: 0; 
+    @media screen and (min-width: 768px) {
+        width: 624px;
+        height: 179px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1056px;
+        height: 179px;
+    }
+}
+.hero-row {
+    display: flex;
+    width: 299px;
+    height: 101px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 32px;
     flex-shrink: 0;
+    @media screen and (min-width: 768px) {
+        width: 624px;
+        height: 45px;
+        display: flex;
+        justify-content:left;
+        padding: 0;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items:center;
+        flex-shrink: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1056px;
+        height: 45px;;
+    }
 }
 .hero-title{
     color: #FFF;
@@ -35,12 +100,17 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.6px;
-    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: -0.84px;
+    }
 }
 .hero-button-box{
+    padding: 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 14px;
 }
 .hero-button-buy{
@@ -57,13 +127,15 @@
     font-weight: 600;
     line-height: normal;
     border: none;
-    // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        padding: 14px 40px;
+    }
 }
-.hero-button-buy:hover{
+.hero-button-buy:hover, .hero-button-buy:focus{
     background: #FCF1E0;
     color: #FD9222;
 }
@@ -71,8 +143,9 @@
     display: flex;
     width: 159px;
     height: 41px;
-    padding: 12px 26px;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 14px;
     border-radius: 100px;
     border: 1px solid #FFF;
@@ -87,15 +160,63 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        width: 170px;
+        height: 45px;
+    }
 }
-.hero-button-how:hover{
+.hero-button-how:hover, .hero-button-how:focus{
     color: #FD9222;
     border: 1px solid #FD9222;
 }
-
-.benefits-svg-box_icon{
+.hero-scroll-box{
+    display: flex;
+    width: 107px;
+    height: 28px;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+    @media screen and (min-width: 768px) {
+        margin-left: 153px;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-left: 585px;
+    }
+}
+.hero-scroll-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 116.667% */
+    letter-spacing: -0.36px;
+}
+.hero-scroll-text:hover, .hero-scroll-text:focus{
+    color: #FD9222;
+}
+.hero-scroll-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 28px;
-        height: 13px;
-        flex-shrink: 0;
-        color: #FD9222;
+    height: 28px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-scroll-link:hover, .hero-scroll-link:focus{
+    background-color: #FD9222;
+}
+.hero-svg-box_icon{
+    width: 16px;
+    height: 16px;
+    fill: #FD9222;
+}
+.hero-svg-box_icon:hover, .hero-svg-box_icon:focus{
+    fill: #FFFFFF;
 }

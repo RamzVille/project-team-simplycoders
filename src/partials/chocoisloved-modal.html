@@ -1,35 +1,44 @@
 <!-- Choco is Loved Review Modal -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal-close" data-modal-close>
-      <svg class="modal-close-icon" width="28" height="28">
+<div class="chocoloved-backdrop chocoloved-is-hidden" data-chocoloved>
+  <div class="chocoloved-modal">
+    <button type="button" class="chocoloved-modal-close" data-chocoloved-close>
+      <svg class="chocoloved-modal-close-icon" width="28" height="28">
         <use href="./images/chocoisloved.svg#close"></use>
       </svg>
     </button>
-    <p class="modal-review-title">
+    <p class="chocoloved-modal-review-title">
       LEAVE A REVIEW ABOUT
-      <span class="modal-review-title-orange">OUR CHOCOLATE</span>
+      <span class="chocoloved-modal-review-title-orange">OUR CHOCOLATE</span>
     </p>
-    <form class="modal-review-form" name="review-form" autocomplete="on">
-      <label class="modal-form-label">
-        <span class="form-label-text">Name</span>
-        <input class="form-label-input" type="text" name="full-name" required />
+    <form
+      class="chocoloved-modal-review-form"
+      name="review-form"
+      autocomplete="on"
+    >
+      <label class="chocoloved-modal-form-label">
+        <span class="chocoloved-form-label-text">Name</span>
+        <input
+          class="chocoloved-form-label-input"
+          type="text"
+          name="full-name"
+          required
+        />
       </label>
 
-      <label class="modal-form-label">
-        <span class="form-label-text">Email</span>
+      <label class="chocoloved-modal-form-label">
+        <span class="chocoloved-form-label-text">Email</span>
         <input
-          class="form-label-input"
+          class="chocoloved-form-label-input"
           type="email"
           name="email-address"
           required
         />
       </label>
 
-      <label class="modal-form-label">
-        <span class="form-label-text">Phone</span>
+      <label class="chocoloved-modal-form-label">
+        <span class="chocoloved-form-label-text">Phone</span>
         <input
-          class="form-label-input"
+          class="chocoloved-form-label-input"
           type="tel"
           name="phone-number"
           required
@@ -43,17 +52,17 @@
               </svg> -->
       </label>
 
-      <label class="modal-form-textarea">
-        <span class="form-label-text">Enter text</span>
+      <label class="chocoloved-modal-form-textarea">
+        <span class="chocoloved-form-label-text">Enter text</span>
         <textarea
           name="comment"
-          class="form-label-textarea"
+          class="chocoloved-form-label-textarea"
           placeholder="Text input"
           rows="6"
           required
         ></textarea>
       </label>
     </form>
-    <button class="modal-form-button" type="submit">Send</button>
+    <button class="chocoloved-modal-form-button" type="submit">Send</button>
   </div>
 </div>

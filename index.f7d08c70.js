@@ -1,0 +1,2 @@
+var swiper=new Swiper(".mySwiper",{slidesPerView:1,spaceBetween:0,slidesPerGroup:3,loop:!0,loopFillGroupWithBlank:!0,lazyLoading:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{1200:{slidesPerView:3,spaceBetween:28},768:{slidesPerView:2,spaceBetween:20},375:{slidesPerView:1,spaceBetween:1}}});
+//# sourceMappingURL=index.f7d08c70.js.map

@@ -201,6 +201,23 @@
     margin-top: 8px;
     margin-bottom: 18px;
 }
+.form-label-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        position: relative;
+        flex-direction:row;
+        align-items: flex-start;
+        gap: 21px;
+        margin-top: 8px;
+        margin-bottom: 18px;
+    }
+}
 .form-input{
     display: flex;
     width: 100%;

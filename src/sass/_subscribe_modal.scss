@@ -19,8 +19,6 @@
   border-radius: 4px;
   width: 311px;
   height: 350px;
-  // width: 100%;
-
   background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,7 +63,7 @@
 }
 
 .subscribe-icon:hover,
-.subscribe-iconl:focus {
+.subscribe-icon:focus {
   stroke: #fd9222;
 }
 
@@ -98,7 +96,6 @@
 }
 .subscribe-input {
   display: inline-flex;
-  // position: relative;
 }
 .form-input {
   color: rgba(64, 64, 64, 0.3);
@@ -129,8 +126,6 @@
   padding: 14px 28px;
   justify-content: center;
   align-items: center;
-  // row-gap: 14px;
-  // position: absolute;
   margin-left: -100px;
   right: 0;
   border-radius: 100px;
@@ -139,11 +134,9 @@
   border: 0;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    // top: 17px;
-    // left: 32px;
-    // width: 100px;
     height: 52px;
     padding: 17px 40px;
     width: 137px;

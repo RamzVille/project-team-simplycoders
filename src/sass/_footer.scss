@@ -1,8 +1,7 @@
 .footer-section {
-  // width: 100%;
+  width: 100%;
   background-color: #1e1823;
   padding: -78px 0;
-
   box-shadow: rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.1);
 }
@@ -18,7 +17,6 @@
 }
 .footer-box-discription {
   width: 300px;
-
   color: #ffffff;
   font-size: 28px;
   font-weight: 500;
@@ -26,7 +24,7 @@
   letter-spacing: -0.56px;
 }
 .footer-contacts {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -64,7 +62,6 @@
 }
 .footer-social-list {
   display: flex;
-
   gap: 18px;
   justify-content: flex-end;
 }
@@ -103,12 +100,8 @@
   }
 }
 
-.footer-menu-item {
-}
-
 .footer-menu-link {
   color: #ffffff;
-
   font-size: 14px;
   font-family: 500;
   line-height: 16px;
@@ -126,6 +119,5 @@
   color: #fd9222;
   background-color: #fcf1fc;
   padding: 5px;
-
   border-radius: 100px;
 }

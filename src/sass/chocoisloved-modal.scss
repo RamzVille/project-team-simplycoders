@@ -1,10 +1,10 @@
 .chocoloved-backdrop {
-  position: block;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.566);
+  background-color: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -13,24 +13,18 @@
 .chocoloved-modal {
   position: absolute;
   width: 311px;
-  //   height: 628px;
   border-radius: 15px;
   background: #fafafa;
   padding: 32px 24px;
-  top: 115%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
   background-color: rgba(250, 250, 250, 0.93);
 
   @media screen and (min-width: 768px) {
-    top: 250%;
     width: 517px;
     padding: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    top: 270%;
   }
 }
 

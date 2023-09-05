@@ -5,16 +5,17 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.54px;
-  padding: 0 25px;
+  padding: 0 5px;
+  font-family: 'Montserrat';
 
   @media screen and (min-width: 768px) {
-    padding: 0 148px;
+    padding: 0 120px;
     margin-bottom: 28px;
     font-size: 24px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0 365px;
+    padding: 0 335px;
   }
 }
 
@@ -29,15 +30,15 @@
   text-align: center;
   line-height: 1.28;
   letter-spacing: -0.28px;
-  padding: 0 16px;
+  font-family: 'Montserrat';
 
   @media screen and (min-width: 768px) {
-    padding: 0 139px;
+    padding: 0 110px;
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0 355px;
+    padding: 0 325px;
   }
 }
 
@@ -112,6 +113,7 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'Montserrat';
 }
 
 .mchoco-label {
@@ -159,6 +161,7 @@
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: -0.54px;
+  font-family: 'Montserrat';
 }
 
 .components-cover-subtitle {
@@ -168,6 +171,7 @@
   font-size: 10px;
   padding: 6px 16px;
   line-height: 1.2;
+  font-family: 'Montserrat';
 }
 
 .components-cover-benefits {
@@ -179,6 +183,7 @@
   display: inline-block;
   margin-left: 6px;
   line-height: 1.2;
+  font-family: 'Montserrat';
 }
 
 .components-cover-description {
@@ -187,4 +192,18 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.28px;
+  font-family: 'Montserrat';
+}
+
+.milk-description {
+  @media screen and (min-width: 1200px) {
+    font-size: 13px;
+  }
+}
+
+.sschoco-description {
+  @media screen and (min-width: 1200px) {
+    font-size: 13px;
+    margin-top: 10px;
+  }
 }

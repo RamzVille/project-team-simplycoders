@@ -1,0 +1,29 @@
+.advantages--section{
+  background-color: #1E1823;
+  display: flex;
+
+}
+.advantages--title{
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+margin-bottom:18px
+}
+
+p{
+color: rgba(255, 255, 255, 0.70);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.28px;
+
+}
+
+.advantages-chocolate-icon{
+width: 32px;
+height: 32px;
+flex-shrink: 0;
+fill: #FD9222;
+}

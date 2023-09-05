@@ -1,0 +1,71 @@
+<!-- Choco is Loved Review Modal -->
+<div class="chocoloved-backdrop chocoloved-is-hidden" data-chocoloved>
+  <div class="chocoloved-modal">
+    <button type="button" class="chocoloved-modal-close" data-chocoloved-close>
+      <svg class="chocoloved-modal-close-icon" width="28" height="28">
+        <use href="./images/chocoisloved.svg#close"></use>
+      </svg>
+    </button>
+
+    <p class="chocoloved-modal-review-title">
+      LEAVE A REVIEW<br class="mobile-break" />
+      ABOUT
+      <span class="chocoloved-modal-review-title-orange">OUR CHOCOLATE</span>
+    </p>
+
+    <form
+      class="chocoloved-modal-review-form"
+      name="review-form"
+      autocomplete="on"
+      method=""
+    >
+      <!-- <span class="chocoloved-form-label-text">Name</span> -->
+      <label class="chocoloved-modal-form-label">
+        <input
+          class="chocoloved-form-label-input"
+          type="text"
+          name="full-name"
+          required
+          placeholder="Name"
+        />
+      </label>
+
+      <!-- <span class="chocoloved-form-label-text">Email</span> -->
+      <label class="chocoloved-modal-form-label">
+        <input
+          class="chocoloved-form-label-input"
+          type="email"
+          name="email-address"
+          required
+          placeholder="Email"
+        />
+      </label>
+
+      <label class="chocoloved-modal-form-label tel-label">
+        <input
+          class="chocoloved-form-label-input form-tel"
+          type="tel"
+          name="phone-number"
+          placeholder="Phone number"
+          required
+        />
+        <div class="form-tel-svg-box">
+          <svg class="form-input-icon">
+            <use href="./images/chocoisloved.svg#tel-flag"></use>
+          </svg>
+          <span class="form-tel-code">+380 </span>
+        </div>
+      </label>
+
+      <label class="chocoloved-modal-form-textarea">
+        <textarea
+          name="comment"
+          class="chocoloved-form-label-textarea"
+          placeholder="Enter text"
+          required
+        ></textarea>
+      </label>
+    </form>
+    <button class="chocoloved-modal-form-button" type="submit">Send</button>
+  </div>
+</div>

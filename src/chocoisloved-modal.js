@@ -9,6 +9,6 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('chocoloved-is-hidden');
+    refs.chocoloved.classList.toggle('chocoloved-is-hidden');
   }
 })();

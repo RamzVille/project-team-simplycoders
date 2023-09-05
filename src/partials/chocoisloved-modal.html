@@ -6,59 +6,61 @@
         <use href="./images/chocoisloved.svg#close"></use>
       </svg>
     </button>
+
     <p class="chocoloved-modal-review-title">
       LEAVE A REVIEW ABOUT
       <span class="chocoloved-modal-review-title-orange">OUR CHOCOLATE</span>
     </p>
+
     <form
       class="chocoloved-modal-review-form"
       name="review-form"
       autocomplete="on"
+      method=""
     >
+      <span class="chocoloved-form-label-text">Name</span>
       <label class="chocoloved-modal-form-label">
-        <span class="chocoloved-form-label-text">Name</span>
         <input
           class="chocoloved-form-label-input"
           type="text"
           name="full-name"
           required
+          placeholder="Name"
         />
       </label>
 
+      <span class="chocoloved-form-label-text">Email</span>
       <label class="chocoloved-modal-form-label">
-        <span class="chocoloved-form-label-text">Email</span>
         <input
           class="chocoloved-form-label-input"
           type="email"
           name="email-address"
           required
+          placeholder="Email"
         />
       </label>
 
       <label class="chocoloved-modal-form-label">
-        <span class="chocoloved-form-label-text">Phone</span>
         <input
-          class="chocoloved-form-label-input"
+          class="chocoloved-form-label-input form-tel"
           type="tel"
           name="phone-number"
           required
         />
-        <!-- <svg class="form-input-icon" 
-                  width="18"
-                  height="24">
-                <use
-                  href="./images/icons.svg#phone"
-                ></use>
-              </svg> -->
+        <div class="form-tel-svg-box">
+          <svg class="form-input-icon">
+            <use href="./images/chocoisloved.svg#tel-flag"></use>
+          </svg>
+          <span class="form-tel-code">+380 </span>
+        </div>
       </label>
 
+      <span class="chocoloved-form-label-text">Enter text</span>
       <label class="chocoloved-modal-form-textarea">
-        <span class="chocoloved-form-label-text">Enter text</span>
         <textarea
           name="comment"
           class="chocoloved-form-label-textarea"
-          placeholder="Text input"
-          rows="6"
+          placeholder="Enter text"
           required
         ></textarea>
       </label>

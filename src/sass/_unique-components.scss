@@ -194,3 +194,16 @@
   letter-spacing: -0.28px;
   font-family: 'Montserrat';
 }
+
+.milk-description {
+  @media screen and (min-width: 1200px) {
+    font-size: 13px;
+  }
+}
+
+.sschoco-description {
+  @media screen and (min-width: 1200px) {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}

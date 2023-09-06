@@ -1,29 +1,165 @@
-.advantages--section{
-  background-color: #1E1823;
-  display: flex;
-
+.advantages--section {
+    background-color: #1E1823;
+    padding: 20px 0;
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 50px 0;
+    }
+    
 }
-.advantages--title{
-color: #FFF;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-margin-bottom:18px
+.advantages-main-container{
+    display: flex;
+    width: 335px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: flex-start;
+        gap: 32px;
+        flex-shrink: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 1100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 70px;
+        flex-shrink: 0;
+        padding: 0;;
+    }
 }
 
-p{
-color: rgba(255, 255, 255, 0.70);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.28px;
+.advantages--container-1{
+    display: flex;
+    width: 308px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 308px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        flex-shrink: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        display: flex;
+        width: 308px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+}
+.advantages--container-1:after {
+   
+    @media screen and (min-width: 768px) {
+       display: none;
+    }
 
+    @media screen and (min-width: 1200px) {
+        content: "";
+        background: rgba(255, 255, 255, 0.50);
+        position: absolute;
+        width: 1px;
+        height: 124px;
+        top: 25%;
+        left: 110%;
+        display: block;
+    }
+}
+.advantages--container-2 {
+    display: flex;
+    width: 308px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 308px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        flex-shrink: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        display: flex;
+        width: 308px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
 }
 
-.advantages-chocolate-icon{
-width: 32px;
-height: 32px;
-flex-shrink: 0;
-fill: #FD9222;
+.advantages--container-2:after {
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        content: "";
+            background: rgba(255, 255, 255, 0.50);
+            position: absolute;
+            width: 1px;
+            height: 124px;
+            top: 25%;
+            left: 110%;
+            display: block;
+    }
+}
+.advantages--container {
+    display: flex;
+    width: 308px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.advantages--title {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.advantages--description {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+
+.advantages-chocolate-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    fill: #FD9222;
+}
+.advantages-svg-icon{
+    display: flex;
+    width: 62px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.303px;
+    flex-shrink: 0;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
 }

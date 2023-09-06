@@ -39,12 +39,12 @@ img {
 }
 
 .section{
-    padding: 72px 0;
+    padding: 72px 0 0 0;
     @media screen and (min-width: 768px) {
-        padding: 100px 0;
+        padding: 100px 0 0 0;
     }
     @media screen and (min-width: 1200px) {
-        padding: 128px 0;
+        padding: 128px 0 0 0;
     }
 }
 .container{

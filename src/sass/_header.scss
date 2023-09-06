@@ -188,22 +188,25 @@
     justify-content: center;
     top: 24px;
     right: 32px;
-    // margin-bottom: 100px;
     cursor: pointer;
     transition-property: background-color, border-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-box:hover {
-    color: #FD9222;
+.modal-close-icon:hover, .modal-close-icon:focus {
+    stroke: #FD9222;
 }
 .modal-close-icon{
-    width: 28px;
-    height: 28px;
+    stroke: white;
+    width:13px;
+    height: 13px;
     flex-shrink: 0;
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-        width: 32px;
-        height: 32px;
+        width: 13.333px;
+        height: 13.333px;
     }
 }
 

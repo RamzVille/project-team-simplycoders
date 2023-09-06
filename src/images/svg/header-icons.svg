@@ -18,7 +18,7 @@
            `<path d="M4 16H28M4 8H28M4 24H28" stroke="#111111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
         <symbol id="menu-close" viewBox="0 0 16 16">
-          `<path d="M14.6667 1.33325L1.33334 14.6666M1.33334 1.33325L14.6667 14.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          `<path d="M14.6667 1.33325L1.33334 14.6666M1.33334 1.33325L14.6667 14.6666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
         <symbol id="instagram-1" viewBox="0 0 24 24">
             <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" s stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -11,6 +11,7 @@ p {
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -18,7 +19,9 @@ html {
 *::before {
     box-sizing: inherit;
 }
-
+body{
+    font-family: Montserrat;
+}
 img {
     display: block;
     max-width: 100%;
@@ -36,12 +39,12 @@ img {
 }
 
 .section{
-    padding: 72px 0;
+     padding: 36px 0;
     @media screen and (min-width: 768px) {
-        padding: 100px 0;
+        padding: 50px 0;
     }
     @media screen and (min-width: 1200px) {
-        padding: 128px 0;
+        padding: 64px 0;
     }
 }
 .container{
@@ -59,4 +62,15 @@ img {
         padding: 0 32px;
         margin: 0 auto;
     }
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }

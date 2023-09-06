@@ -71,7 +71,9 @@
     transition: transform .2s;
     width: 335px;
     height: 464px;
-
+    transition-property: All;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         width: 344px;
         height: 464px;

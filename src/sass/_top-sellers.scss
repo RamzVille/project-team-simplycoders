@@ -68,7 +68,7 @@
 
 .top-sellers-image{
     border-radius: 15px;
-
+    transition: transform .2s;
     width: 335px;
     height: 464px;
 
@@ -82,7 +82,10 @@
         height: 464px;
     }
 }
-
+.top-sellers-image:hover,
+.top-sellers-image:focus{
+ transform: scale(1.5);
+}
 .top-sellers-wrap{
     display: flex;
     align-items:flex-start;
@@ -160,4 +163,10 @@
     color: #FD9222;
     background-color: #FCF1E0;;
 }
-
+.top-zoom {
+  padding: 50px;
+  transition: transform .2s; 
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}

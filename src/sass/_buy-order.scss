@@ -135,11 +135,17 @@
     justify-content: left;
     align-items: center;
     width: 263px;
+    transition: transform .2s;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
     gap:60px;
     margin-bottom: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition-property: All;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         display: flex;
         width: 160px;
@@ -150,6 +156,11 @@
         gap: 14px;
         flex-shrink: 0;
     }
+}
+.buy-order-choco-items:hover,
+.buy-order-choco-items:focus {
+    transform: scale(1.1);
+    border-color: #FD9222;
 }
 .buy-order-choco-items > img {
     width: 84px;
@@ -339,7 +350,7 @@
     right: 16px;
     width: 32px;
     height: 20px;
-    transition-property: fill;
+    transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -403,11 +414,13 @@
     background: #FCF1E0;
     color: #FD9222;
 }
-.form-input:focus,
-.form-input:hover,
+.form-input-name:focus,
+.form-input-name:hover,
 .form-tel:focus,
 .form-tel:hover,
+.form-input-card:focus,
+.form-input-card:hover,
 .form-textarea:hover,
 .form-textarea:focus {
-    border: 1px solid rgba(0, 0, 0, 0.44);
+    border: 1px solid rgba(186, 94, 8, 0.837);
 }

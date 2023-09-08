@@ -1,0 +1,176 @@
+.chocoloved-title-orange {
+  color: #fd9222;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+  }
+}
+
+.chocoloved-title {
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+  }
+}
+
+.myswiper {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.swiper-slide {
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+  margin-top: 92px;
+  margin-bottom: 50px;
+  width: 360px;
+  height: auto;
+  // height: 200px;
+  // width: 360px;
+  // height: 242px;
+  // flex-shrink: 0;
+}
+
+// Need for centering the slider images
+img {
+  margin: 0 auto;
+}
+.swiper-slide-image {
+  margin-top: -45px;
+
+  // display: inline-flex;
+  // display: inline-block;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.swiper-review-name {
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.swiper-review-text {
+  color: rgba(17, 17, 17, 0.7);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  text-align: center;
+  // align-items: self-start;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px 24px 24px 26px;
+    text-align: center;
+  }
+}
+
+.review-button {
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  justify-content: center;
+  width: 165px;
+  height: 41px;
+  padding: 12px 28px;
+  margin-top: 32px;
+  background-color: #fafafa;
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin-top: 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    font-weight: 600;
+    width: 222px;
+    height: 50px;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 222px;
+    height: 50px;
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 14px;
+    flex-shrink: 0;
+    margin-top: 50px;
+  }
+}
+
+.review-button:hover,
+.review-button:focus {
+  background-color: #fd9222;
+  color: #fff;
+}

@@ -1,0 +1,2 @@
+var swiper=new Swiper(".mySwiperProducts",{slidesPerView:1,spaceBetween:8,loop:!0,pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{768:{slidesPerView:3,spaceBetween:0},1200:{slidesPerView:4,spaceBetween:18}}});swiper=new Swiper(".reviewSwiper",{slidesPerView:1,spaceBetween:0,pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{768:{slidesPerView:2,spaceBetween:0},1200:{slidesPerView:3,spaceBetween:0}}});
+//# sourceMappingURL=index.8f60fd54.js.map

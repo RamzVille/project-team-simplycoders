@@ -1,7 +1,11 @@
 var swiper = new Swiper('.mySwiperProducts', {
   slidesPerView: 1,
-  slidesPerView: 1,
   spaceBetween: 8,
+    // slidesPerGroup: 3,
+    loop: true,
+  // loopFillGroupWithBlank: true,
+    // centeredSlides: true,
+  // lazyLoading: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -9,7 +13,7 @@ var swiper = new Swiper('.mySwiperProducts', {
   breakpoints: {
     768: {
       slidesPerView:3,
-      spaceBetween: 8,
+      spaceBetween: 0,
     },
     1200: {
       slidesPerView: 4,
@@ -20,7 +24,7 @@ var swiper = new Swiper('.mySwiperProducts', {
 
   var swiper = new Swiper(".reviewSwiper", {
       slidesPerView: 1,
-     spaceBetween: 8,
+     spaceBetween: 0,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -30,11 +34,11 @@ var swiper = new Swiper('.mySwiperProducts', {
 
     768: {
       slidesPerView: 2,
-      spaceBetween: 16,
+      spaceBetween: 0,
     },
     1200: {
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 0,
     },
   },
     });

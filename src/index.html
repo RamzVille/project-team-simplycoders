@@ -24,6 +24,7 @@
         <include src="./partials/top-sellers.html"></include>
         <include src="./partials/chocoisloved.html"></include>
         <include src="./partials/subscribe.html"></include>
+       
     </main>
     <footer>
         <include src="./partials/footer.html"></include>
@@ -35,6 +36,7 @@
         <include src="./partials/top-sellers-order-modal.html"></include>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
         <script src="./js/top-sellers-order-modal.js"></script>
         <script src="./js/chocoisloved-swiper.js"></script>
         <script src="./js/chocoisloved-modal.js"></script>
@@ -42,24 +44,26 @@
         <script src="./js/subscribe-modal.js"></script>
         <script src="./js/buy-order-modal.js"></script>
         <script src="./js/header-menu-modal.js"></script>
-        <script>
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-      
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-      
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
+       
+        <script type="module">
+          function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
           }
-        }
-      } 
-      window.addEventListener("scroll", reveal);
-      
-      </script>
+          window.addEventListener("scroll", reveal);
+
+        </script>
+    
   </body>
 </html>

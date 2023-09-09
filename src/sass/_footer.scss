@@ -110,9 +110,10 @@
   letter-spacing: -0.28px;
   justify-content: start;
   align-items: flex-start;
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition-property:padding, box-shadow, background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -122,7 +123,7 @@
 .footer-menu-link:focus {
     border-radius: 100px;
     padding: 5px;
-    box-shadow: inset 150px 0 0 0 #fcf1fc;
+  box-shadow: inset 150px 0 0 0 #96835e37;
     color: #FD9222;
   // color: #fd9222;
   // background-color: #fcf1fc;

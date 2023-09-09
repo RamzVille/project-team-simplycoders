@@ -29,12 +29,11 @@
 }
 .menu-effects {
     box-shadow: inset 0 0 0 0 #d6a854bc;
-    // color: #FD9222;
     width: 100%;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    transition-property:box-shadow, background-color, color;
+    transition-property:padding, box-shadow, background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
